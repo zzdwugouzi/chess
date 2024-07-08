@@ -1,0 +1,29 @@
+/* 棋盘居中 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 棋盘格子，棋子居中 */
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #f0d9b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: repeat(10, 60px);
+    gap: 2px;
+    background-color: #d18b47;
+    border: 5px solid #8b4513;
+}
